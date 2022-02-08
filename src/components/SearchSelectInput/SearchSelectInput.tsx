@@ -52,9 +52,12 @@ function SearchSelectInput<T extends Item>({
     setSearchPhrase(e.target.value ?? "");
   }, []);
 
-  const focusInput = useCallback(() => {
+  const focusInput = useCallback((select?: boolean) => {
     if (inputRef.current) {
       inputRef.current.focus();
+      if (select) {
+        inputRef.current.select();
+      }
     }
   }, [inputRef]);
 
@@ -79,7 +82,8 @@ function SearchSelectInput<T extends Item>({
   }, [focusInput])
 
   return (
-    <div className={s.inputWrapper} onClick={focusInput}>
+    <div className={s.inputWrapper}>
+      <div className={s.clickHandler} onClick={() => focusInput(true)}/>
       <input
         onChange={handleChange}
         autoFocus

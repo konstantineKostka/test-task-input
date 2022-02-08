@@ -15,6 +15,13 @@
     cursor: text;
     font-size: calc(10px + 0.5vmin);
 }
+.clickHandler {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 .inputWrapper > input {
     max-width: calc(100% - 1.2em);
     white-space: nowrap;
