@@ -2,7 +2,7 @@
   "name": "test-task-input",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://konstantineKostka.github.io/test-task-input",
+  "homepage": "https://konstantineKostka.github.io/test-task-input/",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@testing-library/jest-dom": "^5.16.2",
