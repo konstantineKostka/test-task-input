@@ -17,6 +17,7 @@ function App() {
   const [results, setResults] = useState<Joke[]>([]);
 
   const requestResults = useCallback((query: string) => {
+    if (!query) return;
     setLoading(true);
     setError(false);
     Api.get(`search?term=${encodeURIComponent(query ?? "")}`)
