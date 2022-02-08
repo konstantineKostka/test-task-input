@@ -1,0 +1,11 @@
+/* color variables */
+
+@value contrastText: #ffffff;
+@value text: #afafb2;
+@value primary: #0851c1;
+@value secondary: #222a3f;
+@value border: #373d56;
+@value background: #1b1d25;
+
+/* other variables */
+@value borderRadius: 0.5em;

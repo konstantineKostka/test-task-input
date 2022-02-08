@@ -1,0 +1,50 @@
+@value colors: "../../vars.css";
+@value primary, secondary, border, borderRadius, text from colors;
+
+.inputWrapper {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid primary;
+    border-radius: borderRadius;
+    text-align: start;
+    max-width: 350px;
+    min-width: 250px;
+    padding: 15px 10px 15px 20px;
+    position: relative;
+    color: text;
+    font-size: calc(10px + 0.5vmin);
+}
+.inputWrapper > input {
+    max-width: calc(100% - 1.2em);
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.inputWrapper > span {
+    color: primary;
+    display: flex;
+    align-items: center;
+}
+
+.dropDownList {
+    margin: 0;
+    padding: 5px;
+}
+
+.dropDownListItem {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    border-radius: borderRadius;
+    width: 100%;
+    cursor: pointer;
+    padding: 15px;
+    transition: background,color 0.25s, color 0.25s;
+}
+
+.dropDownListItem:hover {
+    background: secondary;
+    color: #1a58c2;
+}
+

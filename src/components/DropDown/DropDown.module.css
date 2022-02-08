@@ -1,0 +1,22 @@
+@value colors: "../../vars.css";
+@value contrastText, background, border, borderRadius from colors;
+
+.dropdown {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+    top: 120%;
+}
+
+.dropdown.expanded {
+    cursor: pointer;
+    transition: background 0.25s;
+    border: 2px solid border;
+    border-radius: borderRadius;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}

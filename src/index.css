@@ -1,3 +1,5 @@
+/* initial and global styles */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,22 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a:link, a:visited {
+  color: #61dafb;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+input, button {
+  all: unset;
+}
+
+ul {
+  list-style-type: none;
+}
+
+div, span, ul, li {
+  box-sizing: border-box;
 }
