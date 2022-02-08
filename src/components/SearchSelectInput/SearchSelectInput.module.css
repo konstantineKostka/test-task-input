@@ -1,5 +1,5 @@
 @value colors: "../../vars.css";
-@value primary, secondary, border, borderRadius, text from colors;
+@value primary, secondary, border, borderRadius, regularText from colors;
 
 .inputWrapper {
     display: flex;
@@ -11,7 +11,8 @@
     min-width: 250px;
     padding: 15px 10px 15px 20px;
     position: relative;
-    color: text;
+    color: regularText;
+    cursor: text;
     font-size: calc(10px + 0.5vmin);
 }
 .inputWrapper > input {
@@ -25,6 +26,7 @@
     color: primary;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .dropDownList {

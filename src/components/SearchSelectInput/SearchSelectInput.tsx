@@ -52,6 +52,12 @@ function SearchSelectInput<T extends Item>({
     setSearchPhrase(e.target.value ?? "");
   }, []);
 
+  const focusInput = useCallback(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [inputRef]);
+
   useEffect(() => {
     if (touched) {
       onSearch(debouncedValue);
@@ -69,13 +75,11 @@ function SearchSelectInput<T extends Item>({
   const handleOptionClick = useCallback((option: T) => {
     setOpen(false);
     setValue(option);
-    if (inputRef?.current) {
-      inputRef.current.focus();
-    }
-  }, [inputRef])
+    focusInput();
+  }, [focusInput])
 
   return (
-    <div className={s.inputWrapper}>
+    <div className={s.inputWrapper} onClick={focusInput}>
       <input
         onChange={handleChange}
         autoFocus

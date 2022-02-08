@@ -1,7 +1,7 @@
 /* color variables */
 
 @value contrastText: #ffffff;
-@value text: #afafb2;
+@value regularText: #afafb2;
 @value primary: #0851c1;
 @value secondary: #222a3f;
 @value border: #373d56;
